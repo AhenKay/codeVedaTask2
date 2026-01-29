@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  -webkit-text-stroke: #ffffff;
+  -webkit-text-stroke-width: 0.2px;
+}
+
+body {
+  background: #bdc4cc;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0a6cf1;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+section {
+  background-color: rgb(176, 187, 187);
+  background: linear-gradient(rgba(117, 116, 116, 0.014), rgba(128, 126, 126, 0.836)), url(images/clear2.jpg) no-repeat center center/cover;
+  opacity: 100%;
+  background-attachment: fixed;
+  padding: 60px 60px;
+  max-width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #0a6cf1;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    margin-right: 60px;
+}
+
+.contact-content {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.274);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+}
+
+.KNUST {
+  margin-bottom: 20px;
+}
+
+.course-date p {
+  font-weight: bolder;
+}
+
+.Research-list {
+  margin-left: 20px;
+}
+
+.skills-abilities {
+  margin-left: 20px;
+}
+
+.newsletter-center {
+  flex-grow: 1;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.social-button1 {
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(5px);
+  color: #0a6cf1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-button1:hover {
+  background-color: #0a6cf1;
+  color: #ffffff;
+}
+
+.social-button2 {
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(5px);
+  color: green;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-button2:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+.social-button3 {
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(5px);
+  color: yellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-button3:hover {
+  background-color: rgb(255, 255, 0);
+  color: #ffffff;
+}
+
+.social-button4 {
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(5px);
+  color: rgb(0, 0, 0);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-button4:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.social-icons-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-button:hover {
+  background-color: rgb(54, 68, 50);
+  color: #11e9d7;
+}
+
+.about-content {
+  padding: 30px 30px;
+  overflow: auto;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: #44444470;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.about-img {
+  float: left;
+  width: 200px;
+  max-width: 45%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 0 20px 20px 0;
+}
+
+.about-content p {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .about-img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    width: 60%;
+    max-width: 260px;
+  }
+}
+
+/* Make the layout single-column on narrower screens so contact stacks below profile */
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .profile-content {
+    margin-right: 0;
+  }
+
+  .contact-content {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #0a6cf1;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.contact-message {
+  margin-top: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact {
+  text-align: center;
+}
+
+/* .contact a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #0a6cf1;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+} */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #bbb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LinkedIn-like styling for Work Experience */
+#work-experience {
+  background: #ffffffb0;
+  border-radius: 8px;
+  padding: 18px 40px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background 0.12s, transform 0.12s;
+  border-bottom: #222 1px solid;
+}
+
+.experience-item:hover {
+  background: #f7fbff;
+  transform: translateY(-2px);
+}
+
+.experience-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a3d62;
+}
+
+.experience-item p {
+  margin: 4px 0 0 0;
+  color: #000000;
+  font-size: 0.95rem;
+}
+
+.experience-item .exp-date {
+  margin-left: auto;
+  color: #6b7280;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.experience-item .company-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: #e6eefc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0a3d62;
+  flex-shrink: 0;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.experience-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Smaller screens: stack date under title and remove hover transform */
+@media (max-width: 700px) {
+  .experience-item {
+    flex-direction: column;
+    gap: 6px;
+    transform: none;
+  }
+
+  .experience-item .exp-date {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+}
